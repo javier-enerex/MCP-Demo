@@ -1,0 +1,11 @@
+{
+	"servers": {
+		"mcp-opportunity-list-aca-local": {
+			"type": "http",
+			"url": "http://0.0.0.0:5242/mcp"
+		},
+	},
+	"inputs": [
+
+	]
+}

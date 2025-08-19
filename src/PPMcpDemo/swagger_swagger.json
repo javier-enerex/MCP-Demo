@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MCP Opportunity Management",
+    "description": "A simple MCP server for managing opportunity list items.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080/"
+    }
+  ],
+  "paths": {
+    "/mcp": {
+      "post": {
+        "summary": "Opportunity List",
+        "operationId": "InvokeMCP",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        },
+        "x-ms-agentic-protocol": "mcp-streamable-1.0"
+      }
+    }
+  },
+  "components": { }
+}
