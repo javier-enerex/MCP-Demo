@@ -18,6 +18,9 @@ namespace PPMcpDemo.Models
         [Description("Filters by one or more salesperson name (supports partial matching).")]
         public List<string> SalesPerson { get; set; } = new();
 
+        [Description("Filters by one or more external IDs (exact matches).")]
+        public List<Guid> ExternalID { get; set; } = new();
+
         [Description("Filters by one or more status names (exact matches).")]
         public List<string> Status { get; set; } = new();
 
