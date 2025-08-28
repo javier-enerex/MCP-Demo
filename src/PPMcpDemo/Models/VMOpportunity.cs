@@ -54,6 +54,8 @@ public sealed record CustomPricingDataMcp
     public Guid ExternalID { get; init; }
     [Description("Opportunitiy custom pricing scenario data")]
     public IEnumerable<CustomPricingScenarioDataMcp> CustomPricingScenarios { get; init; }
+    [Description("Indicates whether a contract can be created for this custom pricing in the opportunity. True = allowed; false = not allowed.")]
+    public bool CanCreateContract { get; set; }
 }
 
 public sealed record CustomPricingScenarioDataMcp
